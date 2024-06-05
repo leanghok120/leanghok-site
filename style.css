@@ -81,3 +81,11 @@ img {
   font-weight: 700;
   color: #D7D7D7;
 }
+
+.note {
+  font-style: italic;
+  font-weight: bold;
+  color: #A6A8B4;
+  font-size: 18px;
+  margin-top: 18px;
+}

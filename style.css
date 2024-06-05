@@ -40,3 +40,25 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+.pfp {
+  position: relative;
+  bottom: 45px;
+  left: 30px;
+}
+
+.pfp img {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+}
+
+.status {
+  width: 32px;
+  border-radius: 50%;
+  height: 32px;
+  background-color: #31A73D;
+  position: relative;
+  bottom: 35px;
+  left: 80px;
+}

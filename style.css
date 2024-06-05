@@ -89,3 +89,10 @@ img {
   font-size: 18px;
   margin-top: 18px;
 }
+
+.divider {
+  margin-top: 28px;
+  height: 4px;
+  width: 100%;
+  background-color: #2C2C3A;
+}

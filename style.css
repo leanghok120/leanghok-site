@@ -20,10 +20,23 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.banner img {
-  border-radius: 15px;
-  width: 31rem;
+.banner {
   height: 172px;
+}
+
+.banner img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 31rem;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.stats-container {
+  background-color: #181825;
+  width: 31rem;
+  height: 575px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

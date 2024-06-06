@@ -128,6 +128,11 @@ img {
   margin-bottom: 25px;
 }
 
+.social-icons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social-icon {
   font-size: 55px;
 }

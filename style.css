@@ -57,13 +57,27 @@ img {
   padding: 0 35px;
 }
 
+@media only screen and (max-width: 550px) {
+  .banner {
+    height: 150px;
+  }
+
+  .banner img {
+    width: 300px;
+  }
+
+  .stats-container {
+    width: 300px;
+    height: 475px;
+  }
+}
+
 .pfp {
   position: relative;
   bottom: 45px;
   width: 122px;
   height: 122px;
 }
-
 .pfp img {
   border-radius: 50%;
 }
@@ -135,4 +149,18 @@ img {
 
 .social-icon {
   font-size: 55px;
+}
+
+@media only screen and (max-width: 550px) {
+  .pfp {
+    width: 80px;
+    height: 80px;
+  }
+
+  .status {
+    bottom: 30px;
+    left: 55px;
+    width: 25px;
+    height: 25px;
+  }
 }

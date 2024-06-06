@@ -69,6 +69,7 @@ img {
   .stats-container {
     width: 300px;
     height: 475px;
+    padding: 0 25px;
   }
 }
 
@@ -162,5 +163,32 @@ img {
     left: 55px;
     width: 25px;
     height: 25px;
+  }
+
+  .social-icon {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 15px;
+  }
+
+  .about-me,
+  .member-since {
+    margin-bottom: 15px;
+  }
+
+  .divider {
+    margin-top: 18px;
+    margin-bottom: 15pxpx;
+  }
+
+  .note {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .display-name {
+    font-size: 20px;
   }
 }

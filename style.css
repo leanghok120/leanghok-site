@@ -180,7 +180,11 @@ img {
   }
 
   .section-title {
-    font-size: 15px;
+    font-size: 23px;
+  }
+
+  .section-text {
+    font-size: 20px;
   }
 
   .about-me,
@@ -194,11 +198,19 @@ img {
   }
 
   .note {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 15px;
   }
 
   .display-name {
-    font-size: 20px;
+    font-size: 30px;
+  }
+
+  .username {
+    font-size: 25px;
+  }
+
+  .pronouns {
+    font-size: 23px;
   }
 }

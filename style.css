@@ -29,6 +29,7 @@ body {
   background-image: url("./images/river-background.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #92d5eb;
   color: white;
   font-family: "Pixelar", "Inter";
 }
@@ -61,7 +62,7 @@ img {
 }
 
 .stats-container {
-  background-color: #181825;
+  background-color: #191824;
   width: 31rem;
   height: 575px;
   border-bottom-left-radius: 15px;
@@ -110,7 +111,7 @@ img {
 }
 
 .display-name {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .username {
@@ -125,7 +126,7 @@ img {
 
 .note {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
   color: #a6a8b4;
   font-size: 25px;
   margin-top: 18px;

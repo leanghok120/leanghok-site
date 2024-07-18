@@ -28,8 +28,9 @@ body {
   justify-content: center;
   background-image: url("./images/cozy-room.gif");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-color: #92d5eb;
+  background-color: #4b4d5f;
   color: white;
   font-family: "Pixelar", "Inter";
 }
@@ -72,7 +73,7 @@ img {
 
 @media only screen and (max-width: 550px) {
   .banner {
-    height: 150px;
+    height: 130px;
   }
 
   .banner img {
@@ -81,8 +82,8 @@ img {
 
   .stats-container {
     width: 300px;
-    height: 475px;
-    padding: 0 25px;
+    height: 450px;
+    padding: 25px 25px;
   }
 }
 
@@ -212,14 +213,14 @@ img {
   }
 
   .display-name {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .username {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .pronouns {
-    font-size: 23px;
+    font-size: 18px;
   }
 }

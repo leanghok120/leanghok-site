@@ -62,6 +62,10 @@ img {
   object-position: center;
 }
 
+.container {
+  opacity: 0.98;
+}
+
 .stats-container {
   background-color: #191824;
   width: 31rem;
@@ -213,7 +217,7 @@ img {
   }
 
   .display-name {
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .username {

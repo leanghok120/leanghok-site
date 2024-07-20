@@ -1,6 +1,6 @@
 let changeBgBut = document.getElementById("change-bg-but")
 let bodyEl = document.body
-let backgroundName = 1
+let backgroundName = 3
 
 function changeBg() {
   backgroundName++

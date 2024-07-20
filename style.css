@@ -26,11 +26,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/cozy-room.gif");
+  background-image: url("./images/house-garden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #4b4d5f;
+  background-color: #a2ad1a;
   color: white;
   font-family: "Pixelar", "Inter";
 }
@@ -63,10 +63,11 @@ img {
 }
 
 .container {
-  opacity: 0.98;
+  padding: 20px;
 }
 
 .stats-container {
+  opacity: 0.96;
   background-color: #191824;
   width: 31rem;
   height: 575px;

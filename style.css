@@ -68,6 +68,11 @@ p {
   font-size: 25px;
 }
 
+.date {
+  font-style: italic;
+  color: #9f9f9f;
+}
+
 .mt {
   margin-top: 15px;
 }

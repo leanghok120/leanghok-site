@@ -13,7 +13,7 @@ h1,
 h2,
 h3,
 p {
-  line-height: 0.9;
+  line-height: 1.2;
 }
 
 @font-face {
@@ -49,6 +49,29 @@ img {
   height: 100%;
 }
 
+h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 13px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.mt {
+  margin-top: 15px;
+}
+
 #change-bg-but {
   position: absolute;
   right: 50px;
@@ -80,10 +103,9 @@ img {
   opacity: 0.96;
   background-color: #191824;
   width: 31rem;
-  height: 575px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding: 0 35px;
+  padding: 35px 35px;
 }
 
 @media only screen and (max-width: 550px) {

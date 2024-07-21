@@ -72,6 +72,17 @@ p {
   margin-top: 15px;
 }
 
+#back {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  font-size: 30px;
+}
+
+#back:hover {
+  color: #fff;
+}
+
 #change-bg-but {
   position: absolute;
   right: 50px;
@@ -213,6 +224,33 @@ p {
   .pfp {
     width: 80px;
     height: 80px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .mt {
+    margin-top: 13px;
+  }
+
+  #back {
+    font-size: 20px;
   }
 
   #change-bg-but {

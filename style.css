@@ -7,6 +7,7 @@
 html,
 body {
   height: 100vh;
+  padding: 50px;
 }
 
 h1,
@@ -27,7 +28,6 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url("./images/2-bg");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #191824;
@@ -113,6 +113,7 @@ p {
 
 .container {
   padding: 20px;
+  max-height: 95%;
 }
 
 .stats-container {
@@ -130,11 +131,11 @@ p {
   }
 
   .banner img {
-    width: 300px;
+    width: 365px;
   }
 
   .stats-container {
-    width: 300px;
+    width: 365px;
     padding: 25px 25px;
   }
 }
@@ -247,7 +248,8 @@ p {
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .mt {

@@ -12,4 +12,5 @@ function changeBg() {
   console.log(`Changing background to ${backgroundName}. <3`);
 
   bodyEl.style.backgroundImage = `url(./images/${backgroundName}-bg)`;
+  bodyEl.style.backgroundImage = `url(../images/${backgroundName}-bg)`;
 }

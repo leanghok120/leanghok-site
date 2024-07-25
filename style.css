@@ -129,7 +129,7 @@ p {
   position: relative;
 }
 
-.banner img {
+.banner-img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 31rem;
@@ -190,7 +190,7 @@ p {
     height: 130px;
   }
 
-  .banner img {
+  .banner-img {
     width: 300px;
   }
 
@@ -359,7 +359,8 @@ p {
 
   .divider {
     margin-top: 18px;
-    margin-bottom: 15pxpx;
+    margin-bottom: 15px;
+    height: 8px;
   }
 
   .note {
@@ -377,5 +378,112 @@ p {
 
   .pronouns {
     font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  h1 {
+    font-size: 78px;
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    font-size: 60px;
+    margin-bottom: 35px;
+  }
+
+  h3 {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .mt {
+    margin-top: 35px;
+  }
+
+  .banner {
+    height: 315px;
+  }
+
+  .banner-img {
+    width: 1000px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+
+  .stats-container {
+    width: 1000px;
+    height: 80%;
+    padding: 50px 50px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .pfp {
+    width: 200px;
+    height: 200px;
+    bottom: -78px;
+    left: 30px;
+  }
+
+  #back {
+    font-size: 50px;
+  }
+
+  #change-bg-but {
+    font-size: 50px;
+  }
+
+  .status {
+    bottom: 1px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-icon {
+    font-size: 75px;
+  }
+
+  .section-title {
+    font-size: 55px;
+  }
+
+  .section-text {
+    font-size: 45px;
+  }
+
+  .about-me,
+  .member-since {
+    margin-bottom: 15px;
+  }
+
+  .divider {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: 8px;
+  }
+
+  .note {
+    font-size: 45px;
+    margin-top: 35px;
+  }
+
+  .display-name {
+    font-size: 64px;
+    margin-bottom: -15px;
+  }
+
+  .username {
+    font-size: 50px;
+  }
+
+  .pronouns {
+    font-size: 43px;
   }
 }

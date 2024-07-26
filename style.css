@@ -56,7 +56,7 @@ body {
   background-attachment: fixed;
   background-color: #191824;
   color: white;
-  font-family: "Pixelar", "Inter";
+  font-family: "Pixelar", san-serif;
   padding: 50px;
   min-height: 100vh;
 }

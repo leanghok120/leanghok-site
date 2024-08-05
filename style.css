@@ -57,7 +57,7 @@ body {
   background-color: #191824;
   color: white;
   font-family: "Pixelar", san-serif;
-  padding: 50px;
+  padding: 25px;
   min-height: 100vh;
 }
 
@@ -144,7 +144,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  max-height: 102%;
+  max-height: 100%;
   width: 100%;
 }
 
@@ -194,9 +194,13 @@ p {
     width: 300px;
   }
 
+  .container {
+    padding: 10px;
+  }
+
   .stats-container {
     width: 300px;
-    height: 78%;
+    height: 100%;
     padding: 25px 25px;
   }
 }
@@ -360,7 +364,7 @@ p {
   .divider {
     margin-top: 18px;
     margin-bottom: 15px;
-    height: 8px;
+    height: 3px;
   }
 
   .note {

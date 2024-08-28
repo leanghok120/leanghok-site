@@ -29,7 +29,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="h-screen bg-gruvbox-bg0 text-gruvbox-fg0 py-12 max-w-xl mx-auto font-normal font-caskaydia">
+    <div className="h-screen bg-gruvbox-bg0 text-gruvbox-fg0 py-12 px-4 max-w-xl mx-auto font-normal font-caskaydia">
       <h1 className="text-3xl mb-2 font-bold text-gruvbox-green">leanghok</h1>
       <p className="text-lg mb-5 text-gruvbox-fg1">
         welcome to my cozy room on the Internet where I share my thoughts and

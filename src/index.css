@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Caskaydia";
+  src: url("/public/font/CascadiaCode.woff2") format("woff2");
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const Home = () => {
   const projects = [
@@ -64,12 +65,13 @@ const Home = () => {
       </h2>
       {thoughts.map((thought, index) => (
         <div key={index} className="mb-4 flex justify-between">
-          <a href="#" className="text-gruvbox-blue font-normal">
+          <a href="#" className="text-gruvbox-blue font-bold">
             {thought.title}
           </a>
           <span className="text-gruvbox-gray text-sm">{thought.date}</span>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };

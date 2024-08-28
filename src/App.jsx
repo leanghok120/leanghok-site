@@ -1,7 +1,13 @@
 import Home from "./Home";
+import Footer from "./Footer";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <Home />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

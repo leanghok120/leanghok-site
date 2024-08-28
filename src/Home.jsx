@@ -42,7 +42,7 @@ const Home = () => {
       </h2>
       <p>
         hello! I'm Leanghok, a 13 year old developer. I'm currently learning
-        React.
+        React. I live in the terminal and I use arch (btw) with neovim.
       </p>
 
       <h2 className="text-xl mt-7 mb-2 font-bold text-gruvbox-aqua">

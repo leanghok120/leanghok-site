@@ -25,6 +25,7 @@ const Home = () => {
     {
       title: "my linux journey",
       date: "Jul 22, 2024",
+      link: "https://leanghok.bearblog.dev/my-linux-journey/",
     },
   ];
 
@@ -65,7 +66,7 @@ const Home = () => {
       </h2>
       {thoughts.map((thought, index) => (
         <div key={index} className="mb-4 flex justify-between">
-          <a href="#" className="text-gruvbox-blue font-bold">
+          <a href={thought.link} className="text-gruvbox-blue font-bold">
             {thought.title}
           </a>
           <span className="text-gruvbox-gray text-sm">{thought.date}</span>

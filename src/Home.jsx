@@ -30,14 +30,16 @@ const Home = () => {
   ];
 
   return (
-    <div className="h-screen bg-gruvbox-bg0 text-gruvbox-fg0 py-12 px-4 max-w-xl mx-auto font-normal font-caskaydia">
-      <h1 className="text-3xl mb-2 font-bold text-gruvbox-green">leanghok</h1>
-      <p className="text-lg mb-5 text-gruvbox-fg1">
+    <div className="h-screen bg-gruvbox-bg0 text-gruvbox-fg0 py-12 px-8 max-w-xl mx-auto font-normal font-caskaydia">
+      <h1 className="text-2xl lg:text-4xl tracking-wide mb-2 font-bold text-gruvbox-green">
+        leanghok
+      </h1>
+      <p className="text-md lg:text-lg mb-5 text-gruvbox-fg1">
         welcome to my cozy room on the Internet where I share my thoughts and
         opinions.
       </p>
 
-      <h2 className="text-xl mt-7 mb-2 font-bold text-gruvbox-aqua">
+      <h2 className="text-lg lg:text-xl tracking-wider mt-7 mb-2 font-bold text-gruvbox-aqua">
         about me:
       </h2>
       <p>
@@ -45,7 +47,7 @@ const Home = () => {
         React. I live in the terminal and I use arch (btw) with neovim.
       </p>
 
-      <h2 className="text-xl mt-7 mb-2 font-bold text-gruvbox-aqua">
+      <h2 className="text-lg lg:text-xl tracking-wider mt-7 mb-2 font-bold text-gruvbox-aqua">
         current projects:
       </h2>
       {projects.map((project, index) => (
@@ -61,7 +63,7 @@ const Home = () => {
         </div>
       ))}
 
-      <h2 className="text-xl mt-7 mb-2 font-bold text-gruvbox-aqua">
+      <h2 className="text-lg lg:text-xl tracking-wider mt-7 mb-2 font-bold text-gruvbox-aqua">
         my brain:
       </h2>
       {thoughts.map((thought, index) => (

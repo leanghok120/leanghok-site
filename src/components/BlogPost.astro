@@ -1,0 +1,8 @@
+---
+const { url, title, date } = Astro.props
+---
+
+<li>
+  <time datetime="2024-08-25T00:00:00.000Z" class="mr-12">{date.toString().slice(0, 10)}</time>
+  <a href={url}>{title}</a>
+</li>

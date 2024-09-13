@@ -1,21 +1,9 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const pageTitle = "Leanghok's Posts"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body class="prose prose-stone prose-h1:text-2xl dark:prose-invert bg-stone-100 dark:bg-stone-900 h-screen md:mx-auto py-12 px-10 w-full">
-    <Header />
-    <h2>Posts</h2>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Posts</h2>
+</BaseLayout>

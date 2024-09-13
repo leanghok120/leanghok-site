@@ -1,37 +1,25 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
 
 const pageTitle = "Leanghok's Cabin"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body class="prose prose-stone prose-h1:text-2xl dark:prose-invert bg-stone-100 dark:bg-stone-900 h-screen md:mx-auto py-12 px-10 w-full">
-    <Header />
-    <h2>Hello World!</h2>
-    <p>
-      I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong> based in Cambodia.
-      I'm currently building <strong>Beardoro</strong>. I live in the terminal and
-      I use <strong>arch (btw)</strong> with neovim.
-      Right now, I'm just trying to <strong>get my life together</strong> by organizing everything but it's not going so well.
-    </p>
-    <h2>Posts</h2>
-    <div class="flex flex-col">
-      <a href="#">My Linux Journey</a>
-      <a href="#">A place on The Internet</a>
-    </div>
-    <h2>Projects</h2>
-    <div class="flex flex-col">
-      <div><a href="https://github.com/leanghok120/moody" target="_blank">Moody</a>: A minimal tiling windows manager for x11</div>
-      <div><a href="https://beardoro.vercel.app" target="_blank">Beardoro</a>: A customizable, and aesthetic pomodoro timer</div>
-    </div>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Hello World!</h2>
+  <p>
+    I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong> based in Cambodia.
+    I'm currently building <strong>Beardoro</strong>. I live in the terminal and
+    I use <strong>arch (btw)</strong> with neovim.
+    Right now, I'm just trying to <strong>get my life together</strong> by organizing everything but it's not going so well.
+  </p>
+  <h2>Posts</h2>
+  <div class="flex flex-col">
+    <a href="#">My Linux Journey</a>
+    <a href="#">A place on The Internet</a>
+  </div>
+  <h2>Projects</h2>
+  <div class="flex flex-col">
+    <div><a href="https://github.com/leanghok120/moody" target="_blank">Moody</a>: A minimal tiling windows manager for x11</div>
+    <div><a href="https://beardoro.vercel.app" target="_blank">Beardoro</a>: A customizable, and aesthetic pomodoro timer</div>
+  </div>
+</BaseLayout>

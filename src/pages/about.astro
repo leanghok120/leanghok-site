@@ -1,5 +1,8 @@
 ---
 import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+
+const pageTitle = "Leanghok's About"
 ---
 
 <html lang="en">
@@ -8,7 +11,7 @@ import Header from "../components/Header.astro"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Leanghok's Cabin</title>
+    <title>{pageTitle}</title>
   </head>
   <body class="prose prose-stone prose-h1:text-2xl dark:prose-invert bg-stone-100 dark:bg-stone-900 h-screen md:mx-auto py-12 px-10 w-full">
     <Header />
@@ -23,5 +26,6 @@ import Header from "../components/Header.astro"
       I enjoy <strong>programming</strong>, <strong>cycling</strong>, and <strong>playing basketball</strong>.
       My comfort food is the <strong>Cabanara Buldak Ramen with eggs</strong>.
     </p>
+    <Footer />
   </body>
 </html>

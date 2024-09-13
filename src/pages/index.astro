@@ -1,5 +1,8 @@
 ---
 import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+
+const pageTitle = "Leanghok's Cabin"
 ---
 
 <html lang="en">
@@ -8,14 +11,16 @@ import Header from "../components/Header.astro"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Leanghok's Cabin</title>
+    <title>{pageTitle}</title>
   </head>
   <body class="prose prose-stone prose-h1:text-2xl dark:prose-invert bg-stone-100 dark:bg-stone-900 h-screen md:mx-auto py-12 px-10 w-full">
     <Header />
     <h2>Hello World!</h2>
     <p>
-      I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong>. I'm currently building <strong>Beardoro</strong>.
-      I live in the terminal and I use <strong>arch (btw)</strong> with neovim.
+      I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong> based in Cambodia.
+      I'm currently building <strong>Beardoro</strong>. I live in the terminal and
+      I use <strong>arch (btw)</strong> with neovim.
+      Right now, I'm just trying to <strong>get my life together</strong> by organizing everything but it's not going so well.
     </p>
     <h2>Posts</h2>
     <div class="flex flex-col">
@@ -27,5 +32,6 @@ import Header from "../components/Header.astro"
       <div><a href="https://github.com/leanghok120/moody" target="_blank">Moody</a>: A minimal tiling windows manager for x11</div>
       <div><a href="https://beardoro.vercel.app" target="_blank">Beardoro</a>: A customizable, and aesthetic pomodoro timer</div>
     </div>
+    <Footer />
   </body>
 </html>

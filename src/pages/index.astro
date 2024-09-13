@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import BlogPost from "../components/BlogPost.astro"
 
 const pageTitle = "Leanghok's Cabin"
 ---
@@ -14,7 +15,7 @@ const pageTitle = "Leanghok's Cabin"
   </p>
   <h2>Posts</h2>
   <div class="flex flex-col">
-    <a href="/posts/my-linux-journey">My Linux Journey</a>
+    <div><BlogPost url="./posts/my-linux-journey.md" title="My Linux Journey" date="2024-07-16" /></div>
   </div>
   <h2>Projects</h2>
   <div class="flex flex-col">

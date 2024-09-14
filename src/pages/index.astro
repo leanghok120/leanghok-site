@@ -1,12 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 import BlogPost from "../components/BlogPost.astro"
+import Project from "../components/Project.astro"
 
 const pageTitle = "Leanghok's Cabin"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>Hello World!</h1>
+  <img src="/phnom-penh.jpg" alt="Phnom Penh, Cambodia">
+  <figcaption class="text-center">Phnom Penh, Cambodia</figcaption>
   <p>
     I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong> based in Cambodia.
     I'm currently building <strong>Beardoro</strong>. I live in the terminal and
@@ -19,7 +22,15 @@ const pageTitle = "Leanghok's Cabin"
   </div>
   <h2>Projects</h2>
   <div class="flex flex-col">
-    <div><a href="https://github.com/leanghok120/moody" target="_blank">Moody</a>: A minimal tiling windows manager for x11</div>
-    <div><a href="https://beardoro.vercel.app" target="_blank">Beardoro</a>: A customizable, and aesthetic pomodoro timer</div>
+    <Project url="https://github.com/leanghok120/moody" name="Moody" desc="Minimal tiling windows manager for X11 written in C" />
+    <Project url="https://beardoro.vercel.app" name="Beardoro" desc="Customizable, and aesthetic pomodoro timer" />
+    <Project url="https://digiclock-opal.vercel.app" name="Digiclock" desc="Zen, and simple digital clock" />
+    <Project url="https://github.com/leanghok120/clocky" name="Clocky" desc="a simple TUI ascii art clock, meant to be a simpler alternative to tty-clock" />
   </div>
 </BaseLayout>
+
+<style>
+  img {
+    border-radius: 20px;
+  }
+</style>

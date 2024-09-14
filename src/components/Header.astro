@@ -1,5 +1,5 @@
 ---
-
+import ThemeToggle from "../components/ThemeToggle.astro"
 ---
 
 <header class="flex justify-between items-center mb-24">
@@ -7,5 +7,6 @@
   <nav class="flex gap-4">
     <a href="/about" class="font-semibold">About</a>
     <a href="/posts" class="font-semibold">Posts</a>
+    <ThemeToggle client:load />
   </nav>
 </header>

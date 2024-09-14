@@ -2,9 +2,10 @@
 import BaseLayout from "./BaseLayout.astro"
 
 const { frontmatter } = Astro.props
+const pageTitle = frontmatter.title
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <h1>{frontmatter.title}</h1>
   <p class="font-bold text-gray-500">Written on: {frontmatter.pubDate.toString().slice(0,10)}</p>
   <slot />

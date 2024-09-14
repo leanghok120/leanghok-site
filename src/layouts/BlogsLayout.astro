@@ -7,6 +7,18 @@ const pageTitle = frontmatter.title
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>{frontmatter.title}</h1>
-  <p class="font-bold text-gray-500">Written on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+  <div class="flex gap-3 flex-wrap">
+    {frontmatter.tags.map((tag) => (
+      <a
+        href={`/tags/${tag}`}
+        class="border-2 border-gray-400 bg-gray-300 dark:border-zinc-700 rounded-lg p-1 text-sm dark:bg-zinc-800 hover:scale-110 active:scale-100 transition-all"
+      >
+        {tag}
+      </a>
+    ))}
+  </div>
+  <p class="font-bold text-gray-500">
+    Written on: {frontmatter.pubDate.toString().slice(0, 10)}
+  </p>
   <slot />
-</BaseLayout>
+</BaseLayout>;

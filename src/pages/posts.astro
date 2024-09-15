@@ -11,5 +11,8 @@ const pageTitle = "Leanghok's Posts"
   <ul>
     {allPosts.map((post) => <li><BlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} /></li>)}
   </ul>
-  <a href="./tags/" class="font-bold">See tags</a>
+  <div class="flex gap-4">
+    <a href="./tags/" class="font-bold">See tags</a>
+    <a href="./rss.xml" class="font-bold">RSS feed</a>
+  </div>
 </BaseLayout>

@@ -18,7 +18,7 @@ const pageTitle = frontmatter.title
     ))}
   </div>
   <p class="font-bold text-gray-500">
-    Written on: {frontmatter.pubDate.toString().slice(0, 10)}
+    {frontmatter.pubDate}
   </p>
   <slot />
 </BaseLayout>

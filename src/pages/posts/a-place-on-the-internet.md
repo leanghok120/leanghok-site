@@ -6,7 +6,7 @@ author: "Leanghok"
 tags: ["website", "community"]
 ---
 
-In a world where social media are everywhere, it’s important to have your own
+In a world where social media is everywhere, it’s important to have your own
 space on the internet to share your thoughts and ideas without being censored.
 
 A personal website is not just a “website”, it’s a quiet, cozy place for

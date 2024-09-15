@@ -3,13 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import BlogPost from "../components/BlogPost.astro"
 import Project from "../components/Project.astro"
 import Socials from "../components/Socials.astro"
+import { Image } from 'astro:assets';
 
 const pageTitle = "Leanghok's Cabin"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>Hello World!</h1>
-  <img src="/phnom-penh.webp" srcset="/phnom-penh-small.webp 309w, /phnom-penh.webp 935w" alt="Phnom Penh, Cambodia">
+  <Image src="/phnom-penh.webp" alt="Phnom Penh, Cambodia" width="558" height="358" />
   <figcaption class="text-center">Phnom Penh, Cambodia</figcaption>
   <p>
     I'm <strong>Leanghok</strong>, a 13 year old <strong>developer</strong> based in Cambodia.

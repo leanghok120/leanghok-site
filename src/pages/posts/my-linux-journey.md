@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogsLayout.astro"
 title: "My Linux Journey"
-pubDate: 2024-07-16
+pubDate: "16 July 2024"
 author: "Leanghok"
 tags: ["linux", "workflow"]
 ---

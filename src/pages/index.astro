@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import BlogPost from "../components/BlogPost.astro"
 import Project from "../components/Project.astro"
+import Socials from "../components/Socials.astro"
 
 const pageTitle = "Leanghok's Cabin"
 ---
@@ -16,6 +17,7 @@ const pageTitle = "Leanghok's Cabin"
     I use <strong>arch (btw)</strong> with neovim.
     Right now, I'm just trying to <strong>get my life together</strong> by organizing everything but it's not going so well.
   </p>
+  <Socials />
   <h2>Posts</h2>
   <div class="flex flex-col">
     <div><BlogPost url="/posts/my-linux-journey" title="My Linux Journey" date="2024-07-16" /></div>

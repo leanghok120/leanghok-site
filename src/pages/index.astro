@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-import BlogPost from "../components/BlogPost.astro"
-import Project from "../components/Project.astro"
+import BlogList from "../components/BlogList.astro"
+import ProjectList from "../components/ProjectList.astro"
 import Socials from "../components/Socials.astro"
 import { Image } from 'astro:assets';
 
@@ -20,18 +20,9 @@ const pageTitle = "Leanghok's Cabin"
   </p>
   <Socials />
   <h2>Posts</h2>
-  <div class="flex flex-col">
-    <div><BlogPost url="/posts/getting-my-life-together" title="Getting my life together" date="16 Sep 2024" /></div>
-    <div><BlogPost url="/posts/a-place-on-the-internet" title="A place on the Internet" date="15 Sep 2024" /></div>
-    <div><BlogPost url="/posts/my-linux-journey" title="My Linux Journey" date="16 Jul 2024" /></div>
-  </div>
+  <BlogList />
   <h2>Projects</h2>
-  <div class="flex flex-col">
-    <Project url="https://github.com/leanghok120/moody" name="Moody" desc="Minimal tiling windows manager for X11 written in C" />
-    <Project url="https://beardoro.vercel.app" name="Beardoro" desc="Customizable, and aesthetic pomodoro timer" />
-    <Project url="https://digiclock-opal.vercel.app" name="Digiclock" desc="Zen, and simple digital clock" />
-    <Project url="https://github.com/leanghok120/clocky" name="Clocky" desc="Simple TUI ascii art clock, meant to be a simpler alternative to tty-clock" />
-  </div>
+  <ProjectList />
 </BaseLayout>
 
 <style>

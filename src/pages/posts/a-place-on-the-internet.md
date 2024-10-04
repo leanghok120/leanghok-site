@@ -3,7 +3,7 @@ layout: "../../layouts/BlogsLayout.astro"
 title: "A place on the Internet"
 pubDate: "15 Sep 2024"
 author: "Leanghok"
-tags: ["website", "community"]
+tags: ["coding", "personal"]
 ---
 
 In a world where social media is everywhere, it’s important to have your own

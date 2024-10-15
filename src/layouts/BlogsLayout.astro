@@ -7,18 +7,18 @@ const pageTitle = frontmatter.title
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>{frontmatter.title}</h1>
-  <div class="flex gap-3 flex-wrap">
+  <p class="font-bold text-gray-500 mb-0">
+    {frontmatter.pubDate}
+  </p>
+  <div class="flex gap-3 flex-wrap mt-0">
     {frontmatter.tags.map((tag) => (
       <a
         href={`/tags/${tag}`}
-        class="border-2 border-gray-300 bg-gray-100 dark:border-zinc-700 rounded-lg p-1 text-sm dark:bg-zinc-800 hover:scale-110 active:scale-100 transition-all"
+        class="p-1 text-sm dark:bg-zinc-800 hover:scale-110 active:scale-100 transition-all"
       >
         {tag}
       </a>
     ))}
   </div>
-  <p class="font-bold text-gray-500">
-    {frontmatter.pubDate}
-  </p>
   <slot />
 </BaseLayout>

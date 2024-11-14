@@ -2,24 +2,17 @@
 import pfp from "../assets/killua.jpg";
 import Socials from "./Socials.astro";
 import Location from "./Location.astro";
-import banner from "../assets/killua-vs-youpi.gif";
 ---
 
-<main class="border border-gruvbox-fg rounded-xl w-80 motion-preset-pop">
-  <img src={banner.src} alt="banner image" class="rounded-tl-xl rounded-tr-xl w-full" />
-  <div class="p-5">
-    <img src={pfp.src} alt="leanghok's pfp" class="rounded-full w-16" />
-    <h1>Leanghok</h1>
-    <Location />
-    <blockquote class="mt-2">“I use arch btw”</blockquote>
-    <Socials />
-    <p class="mt-5">
-      Hey! I'm Leanghok, a 13 year old developer and this is my personal
-      website.
-    </p>
-    <p class="mt-5 mb-5">I love music, programming, and anime.</p>
-    <a href="https://github.com/leanghok120"
-      >Check out my projects</a
-    >
-  </div>
-</main>
+<div class="p-5">
+  <img src={pfp.src} alt="leanghok's pfp" class="rounded-full w-16" />
+  <h1>Leanghok</h1>
+  <Location />
+  <blockquote class="mt-2">“I use arch btw”</blockquote>
+  <Socials />
+  <p class="mt-5">
+    Hey! I'm Leanghok, a 13 year old developer and this is my personal website.
+  </p>
+  <p class="mt-5 mb-5">I love music, programming, linux, and anime.</p>
+  <a href="/projects.html">Check out my projects</a>
+</div>

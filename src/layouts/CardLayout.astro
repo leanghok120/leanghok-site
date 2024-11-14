@@ -1,14 +1,12 @@
 ---
-import banner from "../assets/killua-vs-youpi.gif";
+import banner from "../assets/killua-vs-youpi.webm";
 ---
 
 <main
   class="border border-gruvbox-fg bg-gruvbox-bg rounded-xl w-80 motion-preset-pop"
 >
-  <img
-    src={banner.src}
-    alt="banner image"
-    class="rounded-tl-xl rounded-tr-xl w-full"
-  />
+  <video autoplay loop muted playsinline class="rounded-tl-xl rounded-tr-xl">
+    <source src={banner} type="video/webm" />
+  </video>
   <slot />
 </main>

@@ -1,0 +1,51 @@
+<div class="stars"></div>
+
+<style is:global>
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    animation: twinkle 1s infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  const starsContainer = document.querySelector(".stars");
+  const numberOfStars = 200;
+
+  for (let i = 0; i < numberOfStars; i++) {
+    const star = document.createElement("div");
+    star.classList.add("star");
+
+    // Randomize position
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+
+    // Randomize size
+    const size = Math.random() * 2 + 1; // Star size between 1px and 3px
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    starsContainer.appendChild(star);
+  }
+</script>

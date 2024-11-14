@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import CardLayout from "./CardLayout.astro";
+import Stars from "../components/Stars.astro";
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ import CardLayout from "./CardLayout.astro";
     <CardLayout>
       <slot />
     </CardLayout>
+    <Stars />
   </body>
 </html>
 

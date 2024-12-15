@@ -13,9 +13,15 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/jpg" href="/killua.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="h-screen bg-gruvbox-bg text-gruvbox-fg">
-    <main class="p-5 mt-10 mx-auto max-w-3xl w-full">
+  <body class="h-screen bg-gruvbox-bg text-gruvbox-fg font-jetbrainsmono">
+    <main class="p-5 mt-10 mx-auto max-w-2xl w-full">
       <Header />
       <slot />
     </main>
@@ -24,11 +30,6 @@ import Header from "../components/Header.astro";
 </html>
 
 <style is:global>
-  @font-face {
-    font-family: "Departure";
-    src: url("../assets/DepartureMono-Regular.otf");
-  }
-
   .scanlines {
     position: relative;
     overflow: hidden;
@@ -48,25 +49,9 @@ import Header from "../components/Header.astro";
   .scanlines:before {
     background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.3) 2px,
+      rgba(0, 0, 0, 0.2) 2px,
       transparent 2px
     );
     background-size: 100% 3px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 900;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 700;
-  }
-
-  blockquote {
-    font-style: italic;
   }
 </style>

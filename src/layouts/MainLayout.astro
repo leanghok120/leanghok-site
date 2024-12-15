@@ -5,7 +5,7 @@ import Stars from "../components/Stars.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scanlines">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -28,6 +28,38 @@ import Stars from "../components/Stars.astro";
   @font-face {
     font-family: "Departure";
     src: url("../assets/DepartureMono-Regular.otf");
+  }
+
+  .scanlines {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scanlines:before,
+  .scanlines:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .scanlines:before {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 2px,
+      transparent 2px
+    );
+    background-size: 100% 3px;
+    animation: scanline 4s linear infinite;
+  }
+
+  @keyframes scanline {
+    100% {
+      background-position-y: 100%;
+    }
   }
 
   h1 {

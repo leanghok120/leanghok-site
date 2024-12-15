@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Location from "../components/Location.astro";
+import ProjectsList from "../components/ProjectsList.astro";
 ---
 
 <MainLayout title="Leanghok's Cabin">
@@ -10,8 +11,10 @@ import Location from "../components/Location.astro";
   <blockquote class="mt-4 italic font-semibold text-gruvbox-blue">
     “I use arch btw”
   </blockquote>
-  <p class="mt-5 mb-5">
+  <p class="mt-5">
     13 year old programmer and yapper, I love listening to music, programming,
     linux, and neovim. I build stoopid stuff.
   </p>
+  <h2 class="text-xl font-bold text-gruvbox-green mt-5">Stoopid projects</h2>
+  <ProjectsList />
 </MainLayout>

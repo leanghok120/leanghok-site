@@ -12,7 +12,8 @@ export default {
         gruvbox: {
           bg: "#282828",
           fg: "#ebdbb2",
-          aqua: "#b8bb26",
+          green: "#b8bb26",
+          red: "#fb4934",
           gray: "#928374",
         },
       },

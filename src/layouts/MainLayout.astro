@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import Stars from "../components/Stars.astro";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -13,10 +14,9 @@ import Stars from "../components/Stars.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body
-    class="h-screen bg-gruvbox-bg text-gruvbox-fg flex justify-center items-center font-sans"
-  >
-    <main class="p-5">
+  <body class="h-screen bg-gruvbox-bg text-gruvbox-fg">
+    <main class="p-5 mt-10 mx-auto max-w-3xl w-full">
+      <Header />
       <slot />
     </main>
     <Stars />
@@ -68,17 +68,5 @@ import Stars from "../components/Stars.astro";
 
   blockquote {
     font-style: italic;
-  }
-
-  a {
-    font-weight: 700;
-    color: #83a598;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-
-  a:hover {
-    color: #458588;
   }
 </style>

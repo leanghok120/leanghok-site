@@ -1,8 +1,23 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Card from "../components/Card.astro";
+import Socials from "../components/Socials.astro";
+import Location from "../components/Location.astro";
+import Killua from "../assets/killua_christmas.png";
 ---
 
 <MainLayout title="Leanghok's Cabin">
-  <Card />
+  <img src={Killua.src} alt="leanghok's pfp" class="rounded-full w-16" />
+  <h1>Leanghok</h1>
+  <Location />
+  <blockquote class="mt-2">
+    “I <a href="/what-i-use">use</a> arch btw”
+  </blockquote>
+  <Socials />
+  <p class="mt-5">
+    Hey! I'm Leanghok Oeng. I'm a 13 year old <strong
+      >Fullstack Developer</strong
+    >.
+  </p>
+  <p class="mt-5 mb-5">I love music, programming, linux, and anime.</p>
+  <a href="/projects">Check out my projects</a>
 </MainLayout>

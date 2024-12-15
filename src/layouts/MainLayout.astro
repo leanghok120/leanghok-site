@@ -9,7 +9,7 @@ import Stars from "../components/Stars.astro";
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/jpg" href="/killua.jpg" />
+    <link rel="icon" type="image/jpg" href="/killua.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -52,13 +52,6 @@ import Stars from "../components/Stars.astro";
       transparent 2px
     );
     background-size: 100% 3px;
-    animation: scanline 4s linear infinite;
-  }
-
-  @keyframes scanline {
-    100% {
-      background-position-y: 100%;
-    }
   }
 
   h1 {

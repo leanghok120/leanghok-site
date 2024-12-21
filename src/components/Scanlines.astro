@@ -1,0 +1,32 @@
+<div class="scanlines"></div>
+
+<style>
+  .scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .scanlines:before,
+  .scanlines:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .scanlines:before {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 2px
+    );
+    background-size: 100% 3px;
+  }
+</style>

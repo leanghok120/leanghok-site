@@ -1,0 +1,14 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+const allPosts = Object.values(
+  import.meta.glob("./archive/*.md", { eager: true }),
+);
+const pageTitle = "Leanghok's archive";
+---
+
+<MainLayout title={pageTitle}>
+  <h1 class="text-3xl font-black text-gruvbox-green">Archive</h1>
+  <ul>
+    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+  </ul>
+</MainLayout>

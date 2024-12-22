@@ -1,0 +1,30 @@
+---
+import MainLayout from "./MainLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout title={frontmatter.title}>
+  <h1 class="text-3xl font-black text-gruvbox-green">{frontmatter.title}</h1>
+  <p class="italic text-gruvbox-gray font-bold mb-4">
+    {frontmatter.pubDate.toString().slice(0, 10)}
+  </p>
+  <div class="blog">
+    <slot />
+  </div>
+  <p class="italic font-bold mt-4">- Leanghok Oeng</p>
+</MainLayout>
+
+<style is:global>
+  .blog h1 {
+    @apply text-3xl font-black text-gruvbox-green mt-6 mb-4;
+  }
+
+  .blog h2 {
+    @apply text-2xl font-bold text-gruvbox-blue mt-4 mb-2;
+  }
+
+  .blog ul,
+  .blog ol {
+    @apply list-none space-y-4;
+  }
+</style>

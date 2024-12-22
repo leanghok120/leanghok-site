@@ -23,6 +23,18 @@ const { frontmatter } = Astro.props;
     @apply text-2xl font-bold text-gruvbox-blue mt-4 mb-2;
   }
 
+  .blog a {
+    @apply text-gruvbox-red underline font-semibold;
+  }
+
+  .blog p {
+    @apply mt-3 mb-3;
+  }
+
+  .blog blockquote {
+    @apply mt-3 mb-3 italic;
+  }
+
   .blog ul,
   .blog ol {
     @apply list-none space-y-4;

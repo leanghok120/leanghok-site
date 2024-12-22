@@ -1,19 +1,20 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Suckless philosophy for the web"
-pubDate: 2022-07-01
+pubDate: 22-12-2024
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+## Modern web dev
 
-## What I've accomplished
+Moden web development has become too complicated. There's tons of
+libraries and frameworks available out there for the simplest of
+tasks that can be done within a few lines of code.
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+## Suckless
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+If you're in the linux community, you probably know about [suckless](https://suckless.org)
+and their [philosophy](https://suckless.org/philosophy).
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I think if we're able to bring the suckless philosophy to
+the web, it would be so much easier and simpler to build stuff you
+actually want to build.

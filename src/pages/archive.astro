@@ -1,8 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+
 const allPosts = Object.values(
   import.meta.glob("./archive/*.md", { eager: true }),
 );
+
+const parseDate = (dateStr) => {
+  const [day, month, year] = dateStr.split('-').map(Number);
+  return new Date(year, month - 1, day);
+};
+
+allPosts.sort((a, b) => parseDate(b.frontmatter.pubDate) - parseDate(a.frontmatter.pubDate));
+
 const pageTitle = "Leanghok's archive";
 ---
 
